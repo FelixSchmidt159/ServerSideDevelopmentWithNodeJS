@@ -2,3 +2,4 @@ node-express/node_modules
 mongodb
 conFusionServer/node_modules
 node-mongo/node_modules
+node-mongoose/node_modules
