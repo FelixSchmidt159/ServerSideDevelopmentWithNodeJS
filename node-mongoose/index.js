@@ -16,7 +16,7 @@ connect.then((db) => {
 
     newDish.save()
         .then((dish) => {
-            console.log(dish);
+            // console.log(dish);
 
             return Dishes.find({});
         })
@@ -29,7 +29,7 @@ connect.then((db) => {
             return mongoose.connection.close();
         })
         .catch((err) => {
-            console.log(err);
+            // console.log(err);
         });
 
 });
