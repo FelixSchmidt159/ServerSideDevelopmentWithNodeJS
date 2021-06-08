@@ -13,7 +13,7 @@ router.use(bodyParser.json());
 
 
 
-router.options('*', cors.corsWithOptions, (req, res) => { res.sendStatus(200); })
+router.options('*', cors.corsWithOptions, (req, res) => { res.sendStatus(200); });
 router.get('/', cors.corsWithOptions, authenticate.verifyUser, authenticate.verifyAdmin, (req, res, next) => {
   User.find({})
     .then((users) => {
